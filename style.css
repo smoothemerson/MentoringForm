@@ -6,6 +6,23 @@
 
 :root {
   font-size: 62.5%;
+
+  --color-base-white: #fff;
+  --color-fieldset-legend: #535971;
+  --color-label: #4e4958;
+  --color-span: #c1bccc;
+  --color-span-hover: #686570;
+
+  --bg-body: #efefef;
+  --bg-body-before: #535971;
+  --bg-input: #fafafc;
+  --bg-footer: #535971;
+  --bg-footer-button: #ff5374;
+  --bg-footer-button-hover: #ff0033;
+
+  --border-fieldset-legend: #e6e6f0;
+  --border-input: #e6e6f0;
+  --border-input-invalid: #ff1010;
 }
 
 body,
@@ -16,7 +33,7 @@ textarea {
 }
 
 body {
-  background: #efefef;
+  background: var(--bg-body);
 }
 
 body::before {
@@ -28,7 +45,7 @@ body::before {
   top: 0;
   left: 0;
   z-index: -1;
-  background: #535971;
+  background: var(--bg-body-before);
 }
 
 .page {
@@ -45,20 +62,20 @@ header {
 header h1 {
   font-family: "Staatliches", sans-serif;
   font-size: 4.8rem;
-  color: #fff;
+  color: var(--color-base-white);
 
   margin-bottom: 1.8rem;
 }
 
 header p {
-  color: #fff;
+  color: var(--color-base-white);
 
   font-size: 2rem;
 }
 
 form {
   margin-top: 5.8rem;
-  background: #fff;
+  background: var(--color-base-white);
   border-radius: 2rem 2rem 0 0;
   min-height: 108.4rem;
 
@@ -86,10 +103,10 @@ fieldset legend {
 
   width: 100%;
 
-  border-bottom: 1px solid #e6e6f0;
+  border-bottom: 1px solid var(--border-fieldset-legend);
   padding-bottom: 2rem;
 
-  color: #535971;
+  color: var(--color-fieldset-legend);
 }
 
 .input-wrapper {
@@ -106,7 +123,7 @@ fieldset legend {
   font-size: 1.4rem;
   line-height: 2.4rem;
 
-  color: #4e4958;
+  color: var(--color-label);
 
   margin-bottom: 0.8rem;
 }
@@ -117,17 +134,17 @@ fieldset legend {
   font-size: 1.2rem;
   line-height: 2rem;
 
-  color: #c1bccc;
+  color: var(--color-span);
 }
 
 .input-wrapper label span:hover {
-  color: #686570;
+  color: var(--color-span-hover);
 }
 
 .input-wrapper input {
-  background: #fafafc;
+  background: var(--bg-input);
 
-  border: 1px solid #e6e6f0;
+  border: 1px solid var(--border-input);
   border-radius: 0.8rem;
 
   height: 5.6rem;
@@ -144,7 +161,7 @@ fieldset legend {
 }
 
 footer {
-  background: #535971;
+  background: var(--bg-footer);
 
   height: 16rem;
 
@@ -159,7 +176,7 @@ footer {
 
 footer .button {
   height: 5.6rem;
-  background: #ff5374;
+  background: var(--bg-footer-button);
   border: 0;
   border-radius: 2rem;
 
@@ -168,7 +185,7 @@ footer .button {
   font-size: 2rem;
   line-height: 2.6rem;
 
-  color: #fff;
+  color: var(--color-base-white);
 }
 
 footer .button:hover {
@@ -176,5 +193,5 @@ footer .button:hover {
 }
 
 input:invalid {
-  border: 2px solid #ff1010;
+  border: 2px solid var(--border-input-invalid);
 }
