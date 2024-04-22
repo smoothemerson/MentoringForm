@@ -21,6 +21,4 @@ This project was developed with the following technologies:
 
 ## 💻 Project
 
-- [Access the finished project, online](https://smoothemerson.github.io/MentoringForm/)
-
 - Project given by Rocketseat in Stage 03 of the Explorer Course
